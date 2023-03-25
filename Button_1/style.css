@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #f2f2f2;
+}
+
+.bnt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+button{
+    background: transparent;
+    color: #294C5C;
+    width: 150px;
+    height: 50px;
+    font-family: verdana;
+    font-size: 25px;
+    border-color: #57A0C2;
+    font-weight: 400;
+    border-radius: 20px;
+    letter-spacing: 3px;
+    transition: 1s;
+}
+button:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 20px 0 #63B5DB, 0 5px 40px 0 #68C0E8;
+    transition: 2s;
+}
