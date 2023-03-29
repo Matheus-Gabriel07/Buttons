@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #1b1b1b;
+}
+
+.btn_home{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.btn_email{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.btn_phone{
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+
+.btn_marc{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+button{
+    animation: btn 4s;
+    background: transparent;
+    border-style: solid;
+    width: 100px;
+    height: 100px;
+    font-family: verdana;
+    border-radius: 100vmax;
+    transition: 1s;
+}
+
+.btn_home>button{
+    border-color: #193C40;
+    background-color: #193C40;
+}
+
+.btn_email>button{
+    border-color: #A62B1F;
+    background-color: #A62B1F;
+}
+
+.btn_phone>button{
+    border-color: #214001;
+    background-color: #214001;
+}
+
+.btn_marc>button{
+    border-color: #D96941;
+    background-color: #D96941;
+}
+
+.btn_home>button:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 20px 0 #193C40, 0 5px 40px 0 #193C40;
+    transform: rotate(-360deg);
+    transition: 2s;
+}
+
+.btn_email>button:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 20px 0 #A62B1F, 0 5px 40px 0 #A62B1F;
+    transform: rotate(360deg);
+    transition: 2s;
+}
+
+.btn_marc>button:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 20px 0 #D96941, 0 5px 40px 0 #D96941;
+    transform: rotate(-360deg);
+    transition: 2s;
+}
+
+.btn_phone>button:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 20px 0 #214001, 0 5px 40px 0 #214001;
+    transform: rotate(360deg);
+    transition: 2s;
+}
