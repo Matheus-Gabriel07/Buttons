@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:url(Images/jj-ying-azCTGObXR14-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    color: #ffffff;
+
+}
+
+.containner{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.containner h1{
+    font-size: 5em;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5)
+}
+
+.containner h3{
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    background: #000000;
+    padding: 5px 5px;
+    border-radius: 50px 0 50px 0;
+}
+
+.btn{
+    margin: 50px;
+}
+
+.btn_entrar{
+    width: 120px;
+    height: 40px;
+    margin-right: 25px;
+    
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.btn_entrar a, .Btn_cadastrar a{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 0 2px rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.btn_entrar:hover{
+    background: #ffffff;
+    transition: 0.5s;
+}
+
+.btn_entrar a:hover{
+    color: #000000;
+    transition: 0.5s;
+    text-shadow: none;
+}
+
+.Btn_cadastrar{
+    width: 160px;
+    height: 40px;
+
+    background: linear-gradient(90deg, rgba(92,9,121,1) 25%, rgba(255,196,0,1) 100%);
+    border: 0 solid transparent;
+    border-radius: 50px;
+}
+
+.Btn_cadastrar:hover{
+    cursor: pointer;
+    background: linear-gradient(270deg, rgba(92,9,121,1) 25%, rgba(255,196,0,1) 100%);
+    transition: 1s;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -100%);
+    text-align: center;
+    align-items: center;
+
+    background: #ffffff45;
+    color: #000000;
+    width: 100%;
+    height: 50px;   
+}
+
+footer .credits_back{
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+footer .credits_back a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #000000;
+}
