@@ -1,0 +1,108 @@
+$backColor: #F2F2F2;
+$colorOne: #8C1F28;
+$colorSecond: #D92525;
+$colorTir: #097a7a;
+$colorFor: #044040;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    background: $backColor;
+}
+
+.containner {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 15px;
+    align-items: center;
+    align-self: start;
+
+    margin: 5px;
+    padding: 15px 20px;
+    width: max-content;
+    height: max-content;
+
+    a {
+        width: max-content;
+        background: $colorFor;
+        margin: 8px 8px;
+        border-radius: 50px;
+        padding: 10px 15px;
+
+        transition-property: transform;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+        
+        font-family: sans-serif;
+        font-size: 2em;
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #ffffff;
+
+        cursor: pointer;
+    }
+    
+    a:first-child {
+        background: $colorOne;
+    }
+
+    a:first-child:hover{
+        transform: translate(-50px, -50%);
+        box-shadow: 10px 10px 20px $colorSecond;
+        transition: 0.6s ease-out;
+    }
+
+    a:nth-child(2) {
+        background: $colorTir;
+    }
+
+    a:nth-child(2):hover{
+        transform: translate(50px, -50%);
+        transition: 0.6s ease-out;
+        background: $colorFor;
+        box-shadow: -10px -5px 20px $colorTir;
+        color: #d9d9d9;
+    }
+
+    a:nth-child(3) {
+        background: $colorFor;
+    }
+
+    a:nth-child(3):hover {
+        transform: translate(-50px, 50%);
+        transition: 0.3s ease;
+        background: transparent;
+        border: 2px solid $colorFor;
+        box-shadow: -10px -5px 20px #bdbdbd;
+        color: #000000;
+    }
+
+    a:last-child {
+        position: relative;
+        background: $colorSecond;
+        transition: 0.5s;
+    }
+
+    a:last-child:hover {
+        position: relative;
+        padding: 25px 30px;
+        background: linear-gradient(180deg, $colorSecond 0%, $colorOne 100%);
+        transition: 0.5s;
+    }
+
+}
