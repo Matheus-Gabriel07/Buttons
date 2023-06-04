@@ -1,0 +1,82 @@
+@import url("https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #121212;
+}
+
+.containner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containner .child {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+
+.containner .child a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2em;
+    line-height: 0.8em;
+    text-align: center;
+}
+
+.fi {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 15px;
+    padding: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    transform: translateY(0);
+    transition: 0.5s;
+}
+
+.fi:hover {
+    transform: translateY(-20px);
+    transition: 0.5s ease;
+}
+
+.fi-brands-facebook:hover {
+    color: #ffffff;
+    background: #3b5998;
+    box-shadow: 0 0 20px rgba(59, 88, 152, 0.6235294118), 0 0 40px #4c71c1;
+    border: 0;
+}
+
+.fi-brands-linkedin:hover {
+    color: #ffffff;
+    background: #0e76a8;
+    box-shadow: 0 0 20px rgba(14, 118, 168, 0.6235294118), 0 0 40px #118ac3;
+    border: 0;
+}
+
+.fi-brands-twitter:hover {
+    color: #ffffff;
+    background: #00acee;
+    box-shadow: 0 0 20px rgba(0, 172, 238, 0.6862745098), 0 0 40px #159ede;
+    border: 0;
+}
+
+.fi-brands-youtube:hover {
+    color: #ffffff;
+    background: #c4302b;
+    box-shadow: 0 0 20px rgba(196, 48, 43, 0.6862745098), 0 0 40px #e13832;
+    border: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
