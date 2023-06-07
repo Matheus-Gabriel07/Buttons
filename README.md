@@ -1,12 +1,7 @@
-# Buttons
+<h1 align="center">Buttons</h1>
 
-Modelos de botões criados
-
-
-
-### Glow Minimalist
-
-![image](https://user-images.githubusercontent.com/125685533/230734682-8d6f475a-9e57-421d-a8c3-53466fb12c0d.PNG)
+<h3 align="center">Modelos de botões criados</h3>
+<br>
 
 ### Mult Buttons Animation
 
