@@ -1,92 +1,121 @@
-body{
-    margin: 0;
+*{
     padding: 0;
-    background: #1b1b1b;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.btn_home{
+body{
+    background:url(Images/jj-ying-azCTGObXR14-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    color: #ffffff;
+
+}
+
+.containner{
     position: absolute;
+    left: 50%;
     top: 50%;
-    left: 55%;
     transform: translate(-50%, -50%);
+
+    text-align: center;
+    font-family: sans-serif;
 }
 
-.btn_email{
-    position: absolute;
-    top: 50%;
-    left: 45%;
-    transform: translate(-50%, -50%);
+.containner h1{
+    font-size: 5em;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5)
 }
 
-.btn_phone{
-    position: absolute;
-    top: 50%;
-    left: 65%;
-    transform: translate(-50%, -50%);
+.containner h3{
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    background: #000000;
+    padding: 5px 5px;
+    border-radius: 50px 0 50px 0;
 }
 
-.btn_marc{
-    position: absolute;
-    top: 50%;
-    left: 35%;
-    transform: translate(-50%, -50%);
+.btn{
+    margin: 50px;
 }
 
-button{
-    animation: btn 4s;
+.btn_entrar{
+    width: 120px;
+    height: 40px;
+    margin-right: 25px;
+    
     background: transparent;
-    border-style: solid;
-    width: 100px;
-    height: 100px;
-    font-family: verdana;
-    border-radius: 100vmax;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.btn_entrar a, .Btn_cadastrar a{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 0 2px rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.btn_entrar:hover{
+    background: #ffffff;
+    transition: 0.5s;
+}
+
+.btn_entrar a:hover{
+    color: #000000;
+    transition: 0.5s;
+    text-shadow: none;
+}
+
+.Btn_cadastrar{
+    width: 160px;
+    height: 40px;
+
+    background: linear-gradient(90deg, rgba(92,9,121,1) 25%, rgba(255,196,0,1) 100%);
+    border: 0 solid transparent;
+    border-radius: 50px;
+}
+
+.Btn_cadastrar:hover{
+    cursor: pointer;
+    background: linear-gradient(270deg, rgba(92,9,121,1) 25%, rgba(255,196,0,1) 100%);
     transition: 1s;
 }
 
-.btn_home>button{
-    border-color: #193C40;
-    background-color: #193C40;
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -100%);
+    text-align: center;
+    align-items: center;
+
+    background: #ffffff45;
+    color: #000000;
+    width: 100%;
+    height: 50px;   
 }
 
-.btn_email>button{
-    border-color: #A62B1F;
-    background-color: #A62B1F;
+footer .credits_back{
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #000000;
 }
 
-.btn_phone>button{
-    border-color: #214001;
-    background-color: #214001;
-}
-
-.btn_marc>button{
-    border-color: #D96941;
-    background-color: #D96941;
-}
-
-.btn_home>button:hover{
-    cursor: pointer;
-    box-shadow: 0 2px 20px 0 #193C40, 0 5px 40px 0 #193C40;
-    transform: rotate(-360deg);
-    transition: 2s;
-}
-
-.btn_email>button:hover{
-    cursor: pointer;
-    box-shadow: 0 2px 20px 0 #A62B1F, 0 5px 40px 0 #A62B1F;
-    transform: rotate(360deg);
-    transition: 2s;
-}
-
-.btn_marc>button:hover{
-    cursor: pointer;
-    box-shadow: 0 2px 20px 0 #D96941, 0 5px 40px 0 #D96941;
-    transform: rotate(-360deg);
-    transition: 2s;
-}
-
-.btn_phone>button:hover{
-    cursor: pointer;
-    box-shadow: 0 2px 20px 0 #214001, 0 5px 40px 0 #214001;
-    transform: rotate(360deg);
-    transition: 2s;
+footer .credits_back a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #000000;
 }
